@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Form from './components/Form';
+import TodoList from './components/TodoList';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [task, setTask] = useState([]);
+  const [filter, setFilter] = useState('all');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <h1 className="heading">ToDo List</h1>
+      <Form setTask={setTask} setFilter={setFilter} filter={filter} />
+      {task.length === 0 ? (
+        'No task yet!'
+      ) : (
+        <TodoList task={task} setTask={setTask} filter={filter} />
+      )}
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,38 @@
+.Todo-input {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: 0;
+  padding: 13px;
+  width: 400px;
+  border-radius: 2px;
+}
+
+.create-btn {
+  margin-left: 20px;
+  border: 0;
+  color: #fff;
+  background: rgb(94, 94, 94);
+  cursor: pointer;
+  padding: 13px;
+  transition: 0.3s;
+}
+
+.select {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-weight: 400;
+}
+
+.create-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 0.5px #888888;
+}
+
+@media only screen and (max-width: 500px) {
+  .Todo-input {
+    width: 300px;
+  }
+}

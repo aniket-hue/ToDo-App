@@ -1,0 +1,55 @@
+.todo-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.task-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.task-field {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  width: 400px;
+}
+.delete {
+  background-color: #00bfa4;
+}
+
+.done {
+  background-color: #ff7b45;
+}
+
+.edit {
+  background-color: #618630;
+}
+
+.btn {
+  border: 0;
+  padding: 0px 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.done-chck {
+  padding: 15px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 0.5px #888888;
+}
+
+@media only screen and (max-width: 500px) {
+  .todo-wrapper {
+    padding: 10px;
+  }
+}
