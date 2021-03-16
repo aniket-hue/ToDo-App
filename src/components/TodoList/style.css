@@ -14,6 +14,18 @@
   padding: 15px;
   width: 400px;
 }
+
+.edit-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.edit-input {
+  border: 0;
+  padding: 13px;
+}
+
 .delete {
   background-color: #00bfa4;
 }
@@ -24,6 +36,10 @@
 
 .edit {
   background-color: #618630;
+}
+
+.apply {
+  background-color: red;
 }
 
 .btn {
@@ -41,6 +57,8 @@
 
 .line-through {
   text-decoration: line-through;
+  background-color: #05d458;
+  color: #ffff;
 }
 
 .btn:hover {

@@ -7,12 +7,6 @@ const Form = ({ setTask, setFilter, filter }) => {
   const updateTodo = (e) => {
     e.preventDefault();
 
-    // setTask((prevState) => {
-    //   const newState = prevState;
-    //   newState.push(newTask);
-    //   return newState;
-    // });
-
     if (newTask !== '') {
       setTask((prevState) =>
         prevState.concat({
